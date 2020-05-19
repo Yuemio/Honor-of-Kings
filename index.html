@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="gbk">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="ost-box pa">
+        <div class="ost-main w">
+            <div class="ost-logo"><a href=""></a></div>
+            <div class="ost-ad" onmouseover="AdMouseOver()"></div>
+            <div class="ost-czpt">
+                <div class="sprite sprite_2"></div>
+                <div>成长守护平台</div>
+            </div>
+            <div class="ost-title" onmouseover="gameRankVisible()" onmouseout="gameRankInvisible()">
+                <div>腾讯游戏排行榜</div>
+                <div class="sprite sprite_1"></div>
+            </div>
+
+            <div id="ost-gameRank" onmouseover="gameRankVisible()" onmouseout="gameRankInvisible()">
+                <div class="ost-gameRank-col">
+                    <h2 class="rank-title">
+                        <a href="" class="rank-more">新品端游排行榜</a>
+                    </h2>
+                    <ul class="rank-list" id="rankList_1">
+                        <li class="rank-item rank-active" onmousemove="RankImgVisible(1, 1)">
+                            <span class="rank-order rank-top3">1</span>
+                            <p class="game-name">FIFA Online 4</p>
+                            <img src="images/FIFA_Online_4.jpg" alt="">
+                            <div class="rank-btn-bar">
+                                <a href="" class="rank-btn">进入官网</a>
+                                <a href="" class="rank-btn">下载游戏</a>
+                            </div>
+                        </li>
+
+                        <li class="rank-item" onmousemove="RankImgVisible(1, 2)">
+                            <span class="rank-order rank-top3">2</span>
+                            <p class="game-name">NBA2K Online2</p>
+                            <img src="images/NBA2K_Online_2.png" alt="">
+                            <div class="rank-btn-bar">
+                                <a href="" class="rank-btn">进入官网</a>
+                                <a href="" class="rank-btn">下载游戏</a>
+                            </div>
+                        </li>
+
+                        <li class="rank-item" onmousemove="RankImgVisible(1, 3)">
+                            <span class="rank-order rank-top3">3</span>
+                            <p class="game-name">天涯明月刀</p>
+                            <img src="images/天涯明月刀.jpg" alt="">
+                            <div class="rank-btn-bar">
+                                <a href="" class="rank-btn">进入官网</a>
+                                <a href="" class="rank-btn">下载游戏</a>
+                            </div>
+                        </li>
+
+                        <li class="rank-item" onmousemove="RankImgVisible(1, 4)">
+                            <span class="rank-order">4</span>
+                            <p class="game-name">剑灵</p>
+                            <img src="images/剑灵.jpg" alt="">
+                            <div class="rank-btn-bar">
+                                <a href="" class="rank-btn">进入官网</a>
+                                <a href="" class="rank-btn">下载游戏</a>
+                            </div>
+                        </li>
+
+                        <li class="rank-item" onmousemove="RankImgVisible(1, 5)">
+                            <span class="rank-order">5</span>
+                            <p class="game-name">穿越火线</p>
+                            <img src="images/穿越火线.png" alt="">
+                            <div class="rank-btn-bar">
+                                <a href="" class="rank-btn">进入官网</a>
+                                <a href="" class="rank-btn">下载游戏</a>
+                            </div>
+                        </li>
+
+                        <li class="rank-item" onmousemove="RankImgVisible(1, 6)">
+                            <span class="rank-order">6</span>
+                            <p class="game-name">逆战</p>
+                            <img src="images/逆战.png" alt="">
+                            <div class="rank-btn-bar">
+                                <a href="" class="rank-btn">进入官网</a>
+                                <a href="" class="rank-btn">下载游戏</a>
+                            </div>
+                        </li>
+
+                        <li class="rank-item" onmousemove="RankImgVisible(1, 7)">
+                            <span class="rank-order">7</span>
+                            <p class="game-name">QQ炫舞</p>
+                            <img src="images/QQ炫舞.png" alt="">
+                            <div class="rank-btn-bar">
+                                <a href="" class="rank-btn">进入官网</a>
+                                <a href="" class="rank-btn">下载游戏</a>
+                            </div>
+                        </li>
+
+                        <li class="rank-item" onmousemove="RankImgVisible(1, 8)">
+                            <span class="rank-order">8</span>
+                            <p class="game-name">使命召唤Online</p>
+                            <img src="images/使命召唤Online.jpg" alt="">
+                            <div class="rank-btn-bar">
+                                <a href="" class="rank-btn">进入官网</a>
+                                <a href="" class="rank-btn">下载游戏</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ost-gameRank-col">
+                    <h2 class="rank-title">
+                        <a href="" class="rank-more">热门端游排行榜</a>
+                    </h2>
+                    <ul class="rank-list" id="rankList_2">
+                        <li class="rank-item rank-ative" onmousemove="RankImgVisible(2, 1)">
+                            <span class="rank-order rank-top3">1</span>
+                            <p class="game-name">英雄联盟</p>
+                            <img src="images/英雄联盟.jpg" alt="">
+                            <div class="rank-btn-bar">
+                                <a href="" class="rank-btn">进入官网</a>
+                                <a href="" class="rank-btn">下载游戏</a>
+                            </div>
+                        </li>
+
+                        <li class="rank-item" onmousemove="RankImgVisible(2, 2)">
+                            <span class="rank-order rank-top3">2</span>
+                            <p class="game-name">穿越火线</p>
+                            <img src="images/穿越火线.png" alt="">
+                            <div class="rank-btn-bar">
+                                <a href="" class="rank-btn">进入官网</a>
+                                <a href="" class="rank-btn">下载游戏</a>
+                            </div>
+                        </li>
+
+                        <li class="rank-item" onmousemove="RankImgVisible(2, 3)">
+                            <span class="rank-order rank-top3">3</span>
+                            <p class="game-name">地下城与勇士</p>
+                            <img src="images/地下城与勇士.jpg" alt="">
+                            <div class="rank-btn-bar">
+                                <a href="" class="rank-btn">进入官网</a>
+                                <a href="" class="rank-btn">下载游戏</a>
+                            </div>
+                        </li>
+
+                        <li class="rank-item" onmousemove="RankImgVisible(2, 4)">
+                            <span class="rank-order">4</span>
+                            <p class="game-name">天涯明月刀</p>
+                            <img src="images/天涯明月刀.jpg" alt="">
+                            <div class="rank-btn-bar">
+                                <a href="" class="rank-btn">进入官网</a>
+                                <a href="" class="rank-btn">下载游戏</a>
+                            </div>
+                        </li>
+
+                        <li class="rank-item" onmousemove="RankImgVisible(2, 5)">
+                            <span class="rank-order">5</span>
+                            <p class="game-name">QQ炫舞</p>
+                            <img src="images/QQ炫舞.png" alt="">
+                            <div class="rank-btn-bar">
+                                <a href="" class="rank-btn">进入官网</a>
+                                <a href="" class="rank-btn">下载游戏</a>
+                            </div>
+                        </li>
+
+                        <li class="rank-item" onmousemove="RankImgVisible(2, 6)">
+                            <span class="rank-order">6</span>
+                            <p class="game-name">剑灵</p>
+                            <img src="images/剑灵.jpg" alt="">
+                            <div class="rank-btn-bar">
+                                <a href="" class="rank-btn">进入官网</a>
+                                <a href="" class="rank-btn">下载游戏</a>
+                            </div>
+                        </li>
+
+                        <li class="rank-item" onmousemove="RankImgVisible(2, 7)">
+                            <span class="rank-order">7</span>
+                            <p class="game-name">FIFA Online4</p>
+                            <img src="images/FIFA_Online_4.jpg" alt="">
+                            <div class="rank-btn-bar">
+                                <a href="" class="rank-btn">进入官网</a>
+                                <a href="" class="rank-btn">下载游戏</a>
+                            </div>
+                        </li>
+
+                        <li class="rank-item" onmousemove="RankImgVisible(2, 8)">
+                            <span class="rank-order">8</span>
+                            <p class="game-name">逆战</p>
+                            <img src="images/逆战.png" alt="">
+                            <div class="rank-btn-bar">
+                                <a href="" class="rank-btn">进入官网</a>
+                                <a href="" class="rank-btn">下载游戏</a>
+                            </div>
+                        </li>
+
+                        <li class="rank-item" onmousemove="RankImgVisible(2, 9)">
+                            <span class="rank-order">9</span>
+                            <p class="game-name">NBA2K Online 2</p>
+                            <img src="images/NBA2K_Online_2.png" alt="">
+                            <div class="rank-btn-bar">
+                                <a href="" class="rank-btn">进入官网</a>
+                                <a href="" class="rank-btn">下载游戏</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ost-gameRank-col">
+                    <h2 class="rank-title">
+                        <a href="" class="rank-more">新品手游排行榜</a>
+                    </h2>
+                    <ul class="rank-list" id="rankList_3">
+                        <li class="rank-item rank-ative" onmousemove="RankImgVisible(3, 1)">
+                            <span class="rank-order rank-top3">1</span>
+                            <p class="game-name">雪鹰领主</p>
+                            <img src="images/雪鹰领主.jpg" alt="">
+                            <div class="rank-btn-bar">
+                                <a href="" class="rank-btn">进入官网</a>
+                                <a href="" class="rank-btn">下载游戏</a>
+                            </div>
+                        </li>
+
+                        <li class="rank-item" onmousemove="RankImgVisible(3, 2)">
+                            <span class="rank-order rank-top3">2</span>
+                            <p class="game-name">火影忍者</p>
+                            <img src="images/火影忍者.jpg" alt="">
+                            <div class="rank-btn-bar">
+                                <a href="" class="rank-btn">进入官网</a>
+                                <a href="" class="rank-btn">下载游戏</a>
+                            </div>
+                        </li>
+
+                        <li class="rank-item" onmousemove="RankImgVisible(3, 3)">
+                            <span class="rank-order rank-top3">3</span>
+                            <p class="game-name">欢乐斗地主</p>
+                            <img src="images/欢乐斗地主.png" alt="">
+                            <div class="rank-btn-bar">
+                                <a href="" class="rank-btn">进入官网</a>
+                                <a href="" class="rank-btn">下载游戏</a>
+                            </div>
+                        </li>
+
+                        <li class="rank-item" onmousemove="RankImgVisible(3, 4)">
+                            <span class="rank-order">4</span>
+                            <p class="game-name">天天爱消除</p>
+                            <img src="images/天天爱消除.jpg" alt="">
+                            <div class="rank-btn-bar">
+                                <a href="" class="rank-btn">进入官网</a>
+                                <a href="" class="rank-btn">下载游戏</a>
+                            </div>
+                        </li>
+
+                        <li class="rank-item" onmousemove="RankImgVisible(3, 5)">
+                            <span class="rank-order">5</span>
+                            <p class="game-name">QQ飞车</p>
+                            <img src="images/QQ飞车.jpg" alt="">
+                            <div class="rank-btn-bar">
+                                <a href="" class="rank-btn">进入官网</a>
+                                <a href="" class="rank-btn">下载游戏</a>
+                            </div>
+                        </li>
+
+                        <h2 class="rank-title">
+                            <a href="" class="rank-more">热门手游排行榜</a>
+                        </h2>
+
+                        <li class="rank-item" onmousemove="RankImgVisible(3, 6)">
+                            <span class="rank-order rank-top3">1</span>
+                            <p class="game-name">王者荣耀</p>
+                            <img src="images/王者荣耀.jpg" alt="">
+                            <div class="rank-btn-bar">
+                                <a href="" class="rank-btn">进入官网</a>
+                                <a href="" class="rank-btn">下载游戏</a>
+                            </div>
+                        </li>
+
+                        <li class="rank-item" onmousemove="RankImgVisible(3, 7)">
+                            <span class="rank-order rank-top3">2</span>
+                            <p class="game-name">和平精英</p>
+                            <img src="images/和平精英.jpg" alt="">
+                            <div class="rank-btn-bar">
+                                <a href="" class="rank-btn">进入官网</a>
+                                <a href="" class="rank-btn">下载游戏</a>
+                            </div>
+                        </li>
+
+                        <li class="rank-item" onmousemove="RankImgVisible(3, 8)">
+                            <span class="rank-order rank-top3">3</span>
+                            <p class="game-name">穿越火线：枪战王者</p>
+                            <img src="images/穿越火线：枪战王者.jpg" alt="">
+                            <div class="rank-btn-bar">
+                                <a href="" class="rank-btn">进入官网</a>
+                                <a href="" class="rank-btn">下载游戏</a>
+                            </div>
+                        </li>
+
+                        <li class="rank-item" onmousemove="RankImgVisible(3, 9)">
+                            <span class="rank-order">4</span>
+                            <p class="game-name">火影忍者</p>
+                            <img src="images/火影忍者.jpg" alt="">
+                            <div class="rank-btn-bar">
+                                <a href="" class="rank-btn">进入官网</a>
+                                <a href="" class="rank-btn">下载游戏</a>
+                            </div>
+                        </li>
+
+                        <li class="rank-item" onmousemove="RankImgVisible(3, 10)">
+                            <span class="rank-order">5</span>
+                            <p class="game-name">天天爱消除</p>
+                            <img src="images/天天爱消除.jpg" alt="">
+                            <div class="rank-btn-bar">
+                                <a href="" class="rank-btn">进入官网</a>
+                                <a href="" class="rank-btn">下载游戏</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="ost-main ost-main-2 w" onmouseout="AdMouseOut()">
+            <img src="images/ad-big.jpg" alt=""></img>
+            <div class="ost-logo ost-logo2 pr"></div>
+        </div>
+    </div>
+    <div class="header" onmouseover="subNavMouseOver()" onmouseout="subNavMouseout()">
+        <div class="header-nav">
+            <div class="header-logo">
+                <a href=""></a>
+            </div>
+            <ul class="main-nav">
+                <li class="first-nav">
+                    <a href="">
+                        官网首页
+                        <span>HOME</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        游戏资料
+                        <span>DATA</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        内容中心
+                        <span>CONTENTS</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        赛事中心
+                        <span>MATCH</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        百态王者
+                        <span>CULTURE</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        社区互动
+                        <span>COMMUNITY</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        玩家支持
+                        <span>PLAYER</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="login-box">
+                <a href="" class="user-pic">
+                    <img src="images/user_pic.png"></img>
+                </a>
+                <div class="login-info">
+                    <a>欢迎登录</a>
+                    <p>登录后查看游戏战绩</p>
+                </div>
+            </div>
+        </div>
+        <div class="sub-nav">
+            <ul class="sub-nav-inner">
+                <li class="down-nav">
+                </li>
+                <li class="down-nav">
+                    <a href="">版本介绍</a>
+                    <a href="">游戏介绍</a>
+                    <a href="">英雄资料</a>
+                    <a href="">
+                        <i class="icon-fans"></i>爆料站
+                    </a>
+                    <a href="">
+                        <i class="icon-fans"></i>故事站
+                    </a>
+                    <a href="">游戏壁纸</a>
+                    <a href="">
+                        <i class="icon-fans"></i>模拟战资料库
+                    </a>
+                </li>
+                <li class="down-nav">
+                    <a href="">攻略中心</a>
+                    <a href="">英雄攻略</a>
+                    <a href="">视频中心</a>
+                    <a href="">
+                        <i class="icon-fans"></i>开放素材库
+                    </a>
+                    <a href="">王者视角</a>
+                    <a href="">作者入驻</a>
+                    <a href="">媒体入驻</a>
+                </li>
+                <li class="down-nav">
+                    <a href="">
+                        <i class="icon-hot"></i>KPL
+                    </a>
+                    <a href="">冬季冠军杯</a>
+                    <a href="">
+                        <i class="icon-fans"></i>模拟战大师赛
+                    </a>
+                    <a href="">KPLGT</a>
+                    <a href="">高校赛</a>
+                    <a href="">大众赛</a>
+                    <a href="">全民赛</a>
+                    <a href="">
+                        <i class="icon-fans"></i>赛事数据
+                    </a>
+                </li>
+                <li class="down-nav">
+                    <a href="">荣耀传承</a>
+                    <a href="">王者文化站</a>
+                    <a href="">王者音乐听</a>
+                    <a href="">万千世界</a>
+                    <a href="">星光殿堂</a>
+                    <a href="">商户特权</a>
+                    <a href="">
+                        <i class="icon-fans"></i>无限王者团
+                    </a>
+                </li>
+                <li class="down-nav">
+                    <a href="">
+                        <i class="icon-fans"></i>创意互动营
+                    </a>
+                    <a href="">
+                        <i class="icon-hot"></i>王者营地
+                    </a>
+                    <a href="">手Q部落</a>
+                    <a href="">微信圈子</a>
+                    <a href="">官方微博</a>
+                    <a href="">微信工众号</a>
+                    <a href="">手Q订阅号</a>
+                    <a href="">同人社区</a>
+                </li>
+                <li class="down-nav">
+                    <a href="">
+                        <i class="icon-guard"></i>成长守护平台
+                    </a>
+                    <a href="">
+                        <i class="icon-health"></i>健康系统
+                    </a>
+                    <a href="">
+                        <i class="icon-fans"></i>对局环境情报站
+                    </a>
+                    <a href="">客服专区</a>
+                    <a href="">礼包兑换</a>
+                    <a href="">自助服务</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="kv-bg-container">
+            <div class="kv-bg"></div>
+            <a href="" class="kv-link" title="查看详情"></a>
+        </div>
+        <div class="main w">
+            <div class="main-top">
+                <div class="rotate">
+                    <ul class="promo-list" id="promo">
+                        <li class="promo-item"><a href=""><img src="images/rotate_pic_1.jpeg" alt=""></a></li>
+                        <li class="promo-item"><a href=""><img src="images/rotate_pic_2.jpeg" alt=""></a></li>
+                        <li class="promo-item"><a href=""><img src="images/rotate_pic_3.jpeg" alt=""></a></li>
+                        <li class="promo-item"><a href=""><img src="images/rotate_pic_4.jpeg" alt=""></a></li>
+                        <li class="promo-item"><a href=""><img src="images/rotate_pic_5.jpeg" alt=""></a></li>
+                    </ul>
+                    <div class="promoTrigger">
+                        <span id="promo-active" onmouseover="setPromoPic(0)" onmouseout="startRotate()">爱在营地告白季</span>
+                        <span onmouseover="setPromoPic(1)" onmouseout="startRotate()">参与助威赢好礼</span>
+                        <span onmouseover="setPromoPic(2)" onmouseout="startRotate()">揭秘五虎上将之声</span>
+                        <span onmouseover="setPromoPic(3)" onmouseout="startRotate()">王者视角</span>
+                        <span onmouseover="setPromoPic(4)" onmouseout="startRotate()">棋高一招</span>
+                    </div>
+                </div>
+                <div class="news_center"></div>
+                <div class="download_pannel"></div>
+            </div>
+            <div class="quick_entrance"></div>
+            <div class="main_item"></div>
+            <div class="main_item"></div>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+
+</html>
