@@ -44,36 +44,6 @@ var rotatePic = 0;
 
 function Rotate() {
     var promo_list = document.querySelector('.promo-list');
-<<<<<<< HEAD
-    var span_list = document.querySelector('.promoTrigger').querySelectorAll('span');
-    for (var i = 0; i < span_list.length; i++) {
-        if (rotatePic == i) {
-            span_list[i].id = 'promo-active';
-        } else {
-            span_list[i].id = '';
-        }
-    }
-    promo_list.style.marginLeft = rotatePic * -604 + 'px';
-    rotatePic++;
-    rotatePic %= 5;
-}
-
-function setPromoPic(n) {
-    stopRotate();
-    rotatePic = n;
-    Rotate();
-}
-
-function startRotate() {
-    rotateTimer = setInterval("Rotate()", 5000);
-}
-
-function stopRotate() {
-    clearTimeout(rotateTimer);
-}
-
-startRotate();
-=======
     promo_list.style.marginLeft = rotatePic + 'px';
     rotatePic -= 604;
     rotatePic %= 3020;
@@ -108,4 +78,3 @@ function setNewsList(n) {
         }
     }
 }
->>>>>>> 0db52d0be814bcb5b537293623db90fa47b60d41

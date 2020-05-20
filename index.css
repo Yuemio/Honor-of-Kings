@@ -17,13 +17,10 @@ li {
     float: left;
 }
 
-<<<<<<< HEAD
-=======
 .fr {
     float: right;
 }
 
->>>>>>> 0db52d0be814bcb5b537293623db90fa47b60d41
 .pr {
     position: relative;
 }
@@ -436,11 +433,6 @@ li {
 
 .rotate .promo-list img {
     float: left;
-<<<<<<< HEAD
-    
-=======
-
->>>>>>> 0db52d0be814bcb5b537293623db90fa47b60d41
 }
 
 .promoTrigger span {
@@ -454,17 +446,6 @@ li {
     cursor: pointer;
 }
 
-<<<<<<< HEAD
-.promoTrigger #promo-active {
-    background: rgba(255,255,255,0.15) !important;
-    color: #f3c258 !important;
-}
-
-/* .rotate .promoTrigger span:hover {
-    background: rgba(255,255,255,0.15);
-    color: #f3c258;
-} */
-=======
 .promoTrigger .promo-active {
     background: rgba(255, 255, 255, 0.15);
     color: #f3c258;
@@ -680,4 +661,3 @@ li {
     border-bottom: 3px solid #f3c258;
     color: #333333;
 }
->>>>>>> 0db52d0be814bcb5b537293623db90fa47b60d41
