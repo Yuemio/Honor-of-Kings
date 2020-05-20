@@ -64,4 +64,10 @@ function stopRotateTimer() {
 }
 
 startRotateTimer();
-// autoRotate();
+
+function setNewsList(n) {
+    var newsBox = document.querySelector('.news-slide-box');
+    newsBox.style.marginLeft = n * -359 + 'px'
+    var newsTab = document.querySelector('news_tab');
+    var tabList = newsTab.querySelectorAll('a');
+}
