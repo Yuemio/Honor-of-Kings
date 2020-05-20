@@ -538,7 +538,7 @@ li {
     font-size: 12px;
 }
 
-.download_pannel a{
+.download_pannel a {
     width: 236px;
     background: url(images/index.png) no-repeat;
 }
@@ -559,4 +559,26 @@ li {
     display: block;
     height: 108px;
     background-position: 0 -461px;
+}
+
+.quick_entrance {
+    margin: 28px auto 34px;
+    margin-right: -12px;
+}
+
+.quick_entrance a {
+    float: left;
+    display: block;
+    width: 291px;
+    height: 134px;
+    margin-right: 12px;
+    overflow: hidden;
+}
+
+.quick_entrance img {
+    transition: transform .4s;
+}
+
+.quick_entrance img:hover {
+    transform: scale(1.1);
 }
