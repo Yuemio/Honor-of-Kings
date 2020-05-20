@@ -536,3 +536,26 @@ li {
     color: #999;
     font-size: 12px;
 }
+
+.download_pannel a{
+    width: 236px;
+    background: url(images/index.png) no-repeat;
+}
+
+.download_pannel .download_btn {
+    display: block;
+    height: 128px;
+    background-position: 0 -219px;
+}
+
+.download_pannel .environment_btn {
+    display: block;
+    height: 106px;
+    background-position: 0 -350px;
+}
+
+.download_pannel .experience_btn {
+    display: block;
+    height: 108px;
+    background-position: 0 -461px;
+}
