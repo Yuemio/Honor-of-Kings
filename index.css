@@ -446,8 +446,8 @@ li {
     cursor: pointer;
 }
 
-.promoTrigger .promo-active {
-    background: rgba(255, 255, 255, 0.15);
+.promoTrigger #promo-active {
+    background: rgba(255,255,255,0.15);
     color: #f3c258;
 }
 
