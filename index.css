@@ -17,6 +17,13 @@ li {
     float: left;
 }
 
+<<<<<<< HEAD
+=======
+.fr {
+    float: right;
+}
+
+>>>>>>> 0db52d0be814bcb5b537293623db90fa47b60d41
 .pr {
     position: relative;
 }
@@ -429,7 +436,11 @@ li {
 
 .rotate .promo-list img {
     float: left;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 0db52d0be814bcb5b537293623db90fa47b60d41
 }
 
 .promoTrigger span {
@@ -443,6 +454,7 @@ li {
     cursor: pointer;
 }
 
+<<<<<<< HEAD
 .promoTrigger #promo-active {
     background: rgba(255,255,255,0.15) !important;
     color: #f3c258 !important;
@@ -452,3 +464,220 @@ li {
     background: rgba(255,255,255,0.15);
     color: #f3c258;
 } */
+=======
+.promoTrigger .promo-active {
+    background: rgba(255, 255, 255, 0.15);
+    color: #f3c258;
+}
+
+/* ------------------------------------------------------------- */
+
+.news-center {
+    width: 325px;
+    padding: 0 17px;
+}
+
+.news-center .news_tab {
+    height: 48px;
+    border-bottom: 1px solid;
+}
+
+#news_tab_on {
+    color: #f3c258;
+    border-bottom: 3px solid #f3c258;
+    transition: border .2s;
+}
+
+.news-center .news_tab li {
+    float: left;
+}
+
+.news-center .news_tab a {
+    display: block;
+    width: 52px;
+    height: 48px;
+    padding-bottom: 1px;
+    font-size: 14px;
+    color: #b8b9c5;
+    line-height: 48px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.news-con {
+    overflow: hidden;
+}
+
+.news-slide-box {
+    width: 1795px;
+    transition: margin-left .3s;
+}
+
+.news-list {
+    float: left;
+    width: 325px;
+    height: 293px;
+    margin-right: 34px;
+}
+
+.news-list li {
+    margin-bottom: 11px;
+}
+
+.news-list li a:hover {
+    text-decoration: underline;
+}
+
+.news-list .line-sp {
+    width: 294px;
+    height: 36px;
+    margin-top: 18px;
+    padding: 0 15px;
+    text-align: center;
+    background-color: #414046;
+}
+
+.news-list .line-sp a {
+    color: #f3c258;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.news-list li a {
+    display: inline-block;
+    width: 270px;
+    color: #b8b9c5;
+    font-size: 14px;
+    line-height: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.news-list li span {
+    float: right;
+    color: #999;
+    font-size: 12px;
+}
+
+.download_pannel a {
+    width: 236px;
+    background: url(images/index.png) no-repeat;
+}
+
+.download_pannel .download_btn {
+    display: block;
+    height: 128px;
+    background-position: 0 -219px;
+}
+
+.download_pannel .environment_btn {
+    display: block;
+    height: 106px;
+    background-position: 0 -350px;
+}
+
+.download_pannel .experience_btn {
+    display: block;
+    height: 108px;
+    background-position: 0 -461px;
+}
+
+.quick_entrance {
+    margin: 28px auto 34px;
+    margin-right: -12px;
+    overflow: hidden;
+}
+
+.quick_entrance a {
+    float: left;
+    display: block;
+    width: 291px;
+    height: 134px;
+    margin-right: 12px;
+    overflow: hidden;
+}
+
+.quick_entrance img {
+    transition: transform .4s;
+}
+
+.quick_entrance img:hover {
+    transform: scale(1.1);
+}
+
+/* .main-item {
+} */
+
+.content-center {
+    width: 872px;
+    height: 528px;
+    margin-right: 33px;
+    /* background-color: skyblue; */
+}
+
+.hero-skin {
+    width: 295px;
+    height: 528px;
+    /* background-color: pink; */
+}
+
+.item-header {
+    margin-bottom: 16px;
+    /* background-color: skyblue; */
+}
+
+.item-header .item-title {
+    display: inline-block;
+    width: 140px;
+    height: 26px;
+    background: url(images/index.png) no-repeat;
+    background-position: 0 -106px;
+    color: #323235;
+    font-size: 22px;
+    text-indent: 33px;
+    line-height: 26px;
+}
+
+.item-header .more-btn {
+    padding-left: 22px;
+    color: #999;
+    font-size: 14px;
+    line-height: 22px;
+    background: url(images/index.png) no-repeat;
+    background-position: -252px 4px;
+}
+
+.item_subnav {
+    height: 32px;
+    background-color: #f5f5f5;
+}
+
+.item_subnav a{
+    float: left;
+    display: block;
+    width: 289px;
+    height: 30px;
+    color: #999;
+    line-height: 29px;
+    text-align: center;
+    font-size: 14px;
+    /* background-color: blue; */
+}
+
+.item_subnav span {
+    float: left;
+    display: block;
+    margin-top: 7px;
+    width: 1px;
+    height: 20px;
+    line-height: 32px;
+    /* color: red; */
+    background-color: #e1e1e1;
+}
+
+.on {
+    border-bottom: 3px solid #f3c258;
+    color: #333333;
+}
+>>>>>>> 0db52d0be814bcb5b537293623db90fa47b60d41
