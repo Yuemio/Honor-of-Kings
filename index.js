@@ -72,3 +72,39 @@ function stopRotate() {
 }
 
 startRotate();
+
+function setNewsList(n) {
+    var newsBox = document.querySelector('.news-slide-box');
+    newsBox.style.marginLeft = n * -359 + 'px'
+    var newsTab = document.querySelector('.news_tab');
+    var tabList = newsTab.querySelectorAll('a');
+    for (var i = 0; i < tabList.length; i++){
+        if (i == n) {
+            tabList[i].id = 'news_tab_on';
+        } else {
+            tabList[i].id = '';
+        }
+    }
+}
+
+function itemSubNavMouseOver(name, n) {
+    var nav = document.querySelector('.item_subnav');
+    var nav_list = nav.querySelectorAll('a');
+    for (var i = 0; i < nav_list.length; i++) {
+        if (i == n) {
+            nav_list[i].className = 'on'
+        } else {
+            nav_list[i].className = ''
+        }
+    }
+    
+    var div = document.querySelector(name);
+    var ul_list = div.querySelectorAll('ul');
+    for (var i = 0; i < ul_list.length; i++) {
+        if (i == n) {
+            ul_list[i].className = 'tganime-fadein on'
+        } else {
+            ul_list[i].className = 'tganime-fadein'
+        }
+    }
+}
