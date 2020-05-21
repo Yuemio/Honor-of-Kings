@@ -78,7 +78,7 @@ function setNewsList(n) {
     newsBox.style.marginLeft = n * -359 + 'px'
     var newsTab = document.querySelector('.news_tab');
     var tabList = newsTab.querySelectorAll('a');
-    for (var i = 0; i < tabList.length; i++){
+    for (var i = 0; i < tabList.length; i++) {
         if (i == n) {
             tabList[i].id = 'news_tab_on';
         } else {
@@ -87,7 +87,7 @@ function setNewsList(n) {
     }
 }
 
-function itemSubNavMouseOver(name, n) {
+function itemSubNavMouseOver(n) {
     var nav = document.querySelector('.item_subnav');
     var nav_list = nav.querySelectorAll('a');
     for (var i = 0; i < nav_list.length; i++) {
@@ -97,11 +97,49 @@ function itemSubNavMouseOver(name, n) {
             nav_list[i].className = ''
         }
     }
-    
-    var div = document.querySelector(name);
+
+    var div = document.querySelector('.item_thirdnav');
     var ul_list = div.querySelectorAll('ul');
     for (var i = 0; i < ul_list.length; i++) {
         if (i == n) {
+            ul_list[i].className = 'tganime-fadein on'
+        } else {
+            ul_list[i].className = 'tganime-fadein'
+        }
+    }
+
+    if (n >= 2)
+        return;
+    itemThirdNavMouseOver(n + 1, 0)
+
+    // if (n < 2)
+    //     return;
+    // var nav = document.querySelector('#item_thirdnav' + ++n);
+    // var nav_list = nav.querySelectorAll('a');
+    // for (var i = 0; i < nav_list.length; i++) {
+    //     if (i == 0) {
+    //         nav_list[i].className = 'on'
+    //     } else {
+    //         nav_list[i].className = ''
+    //     }
+    // }
+}
+
+function itemThirdNavMouseOver(m, n) {
+    var nav = document.querySelector('#item_thirdnav' + m);
+    var nav_list = nav.querySelectorAll('a');
+    for (var i = 0; i < nav_list.length; i++) {
+        if (i == n) {
+            nav_list[i].className = 'on'
+        } else {
+            nav_list[i].className = ''
+        }
+    }
+
+    var div = document.querySelector('.item_content');
+    var ul_list = div.querySelectorAll('ul');
+    for (var i = 0; i < ul_list.length; i++) {
+        if (ul_list[i].id == 'item_content' + m + (n + 1)) {
             ul_list[i].className = 'tganime-fadein on'
         } else {
             ul_list[i].className = 'tganime-fadein'

@@ -753,6 +753,10 @@ li {
     overflow: hidden;
 }
 
+.item_content li:nth-child(4n) {
+    margin-right: 0;
+}
+
 .item_content li {
     position: relative;
     float: left;
@@ -799,6 +803,30 @@ li {
     background: url(images/index.png) no-repeat;
     background-position: -256px -62px;
     font-size: 12px;
+}
+
+.item_content .mask {
+    position: absolute;
+    top: 0;
+    width: 209px;
+    height: 125px;    
+    background: rgba(0,0,0,0.6);
+    opacity: 0;
+    transition: opacity .1s ease;
+}
+
+.item_content .mask:hover {
+    opacity: 1;
+    transition: opacity .4s ease;
+}
+
+.item_content .mask span {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 40px 84.5px;
+    background: url(images/index.png) no-repeat;
+    background-position: -192px -64px;
 }
 
 /* .tganime-fadein-trigger .tganime-fadein-child {
