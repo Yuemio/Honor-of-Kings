@@ -604,8 +604,8 @@
                             <li><a href="" onmouseover="itemThirdNavMouseOver(2,5)">QG荣耀学院</a></li>
                             <li><a href="" onmouseover="itemThirdNavMouseOver(2,6)">我来carry</a></li>
                         </ul>
-                        <ul class="item_thirdnav3 ">
-                            <span>选择英雄</span>
+                        <ul class="item_thirdnav3">
+                            <span onmouseover="itemContentVisible()">选择英雄</span>
                         </ul>
                     </div>
                     <div class="item_content">
@@ -2440,57 +2440,400 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="dropdown">
+                    <div class="dropdown" onmouseover="itemContentVisible()" onmouseout="itemContentInVisible()">
                         <div class="hero_type fl">
                             <ul>
-                                <li class="on">热门</li>
-                                <li>坦克</li>
-                                <li>战士</li>
-                                <li>刺客</li>
-                                <li>法师</li>
-                                <li>射手</li>
-                                <li>辅助</li>
+                                <li class="on" onmouseover="heroTypeMouseOver(0,1)">热门</li>
+                                <li onmouseover="heroTypeMouseOver(1,2)">坦克</li>
+                                <li onmouseover="heroTypeMouseOver(2,3)">战士</li>
+                                <li onmouseover="heroTypeMouseOver(3,4)">刺客</li>
+                                <li onmouseover="heroTypeMouseOver(4,5)">法师</li>
+                                <li onmouseover="heroTypeMouseOver(5,6)">射手</li>
+                                <li onmouseover="heroTypeMouseOver(6,7)">辅助</li>
                             </ul>
                         </div>
                         <div class="hero_list fl">
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                            <ul id="hero_list1" class="tganime-fadein on">
+                                <li>
+                                    <img src="images/后羿.jpg" alt="">
+                                    <span>后羿</span>
+                                </li>
+                                <li>
+                                    <img src="images/后羿.jpg" alt="">
+                                    <span>后羿</span>
+                                </li>
+                                <li>
+                                    <img src="images/后羿.jpg" alt="">
+                                    <span>后羿</span>
+                                </li>
+                                <li>
+                                    <img src="images/后羿.jpg" alt="">
+                                    <span>后羿</span>
+                                </li>
+                                <li>
+                                    <img src="images/后羿.jpg" alt="">
+                                    <span>后羿</span>
+                                </li>
+                                <li>
+                                    <img src="images/后羿.jpg" alt="">
+                                    <span>后羿</span>
+                                </li>
+                                <li>
+                                    <img src="images/后羿.jpg" alt="">
+                                    <span>后羿</span>
+                                </li>
+                                <li>
+                                    <img src="images/后羿.jpg" alt="">
+                                    <span>后羿</span>
+                                </li>
+                                <li>
+                                    <img src="images/后羿.jpg" alt="">
+                                    <span>后羿</span>
+                                </li>
+                                <li>
+                                    <img src="images/后羿.jpg" alt="">
+                                    <span>后羿</span>
+                                </li>
+                                <li>
+                                    <img src="images/后羿.jpg" alt="">
+                                    <span>后羿</span>
+                                </li>
+                                <li>
+                                    <img src="images/后羿.jpg" alt="">
+                                    <span>后羿</span>
+                                </li>
+                                <li>
+                                    <img src="images/后羿.jpg" alt="">
+                                    <span>后羿</span>
+                                </li>
+                                <li>
+                                    <img src="images/后羿.jpg" alt="">
+                                    <span>后羿</span>
+                                </li>
+                                <li>
+                                    <img src="images/后羿.jpg" alt="">
+                                    <span>后羿</span>
+                                </li>
+                                <li>
+                                    <img src="images/后羿.jpg" alt="">
+                                    <span>后羿</span>
+                                </li>
+                                <li>
+                                    <img src="images/后羿.jpg" alt="">
+                                    <span>后羿</span>
+                                </li>
+                                <li>
+                                    <img src="images/后羿.jpg" alt="">
+                                    <span>后羿</span>
+                                </li>
+                                <li>
+                                    <img src="images/后羿.jpg" alt="">
+                                    <span>后羿</span>
+                                </li>
+                                <li>
+                                    <img src="images/后羿.jpg" alt="">
+                                    <span>后羿</span>
+                                </li>
+                                <li>
+                                    <img src="images/后羿.jpg" alt="">
+                                    <span>后羿</span>
+                                </li>
+                                <li>
+                                    <img src="images/后羿.jpg" alt="">
+                                    <span>后羿</span>
+                                </li>
+                                <li>
+                                    <img src="images/后羿.jpg" alt="">
+                                    <span>后羿</span>
+                                </li>
+                                <li>
+                                    <img src="images/后羿.jpg" alt="">
+                                    <span>后羿</span>
+                                </li>
+                                <li>
+                                    <img src="images/后羿.jpg" alt="">
+                                    <span>后羿</span>
+                                </li>
+                                <li>
+                                    <img src="images/后羿.jpg" alt="">
+                                    <span>后羿</span>
+                                </li>
+                                <li>
+                                    <img src="images/后羿.jpg" alt="">
+                                    <span>后羿</span>
+                                </li>
+                                <li>
+                                    <img src="images/后羿.jpg" alt="">
+                                    <span>后羿</span>
+                                </li>
+                                <li>
+                                    <img src="images/后羿.jpg" alt="">
+                                    <span>后羿</span>
+                                </li>
+                                <li>
+                                    <img src="images/后羿.jpg" alt="">
+                                    <span>后羿</span>
+                                </li>
+                                <li>
+                                    <img src="images/后羿.jpg" alt="">
+                                    <span>后羿</span>
+                                </li>
+                            </ul>
+                            <ul id="hero_list2">
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                            </ul>
+                            <ul id="hero_list3">
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                            </ul>
+                            <ul id="hero_list4">
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
+                                <li>
+                                    <img src="images/猪八戒.jpg" alt="">
+                                    <span>猪八戒</span>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="hero-skin fl">
+                    <div class="item-header">
+                        <h3 class="item-title">英雄/皮肤</h3>
+                        <a href="" class="more-btn fr">更多</a>
+                    </div>
+                    <div class="item_subnav">
+                        <ul>
+                            <li>
+                                <a href="" class="on" onmouseover="itemSubNavMouseOver(0)">最新英雄</a>
+                            </li>
+                            <li><span></span></li>
+                            <li><a href="" onmouseover="itemSubNavMouseOver(1)">最新皮肤</a></li>
+                            <li><span></span></li>
+                            <li><a href="" onmouseover="itemSubNavMouseOver(2)">周免英雄</a></li>
+                        </ul>
+                    </div>
+                    <div class="item_content">
+                        <ul class="heroSkin_slide">
+                            <li>
+                                <div>
+                                    <img src="images/新英雄：镜.jpg" alt="">
+                                    <div>
+                                        <span>新英雄：镜</span>
+                                        <span>上线时间：2020.03.31</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="images/skin.jpg" alt="">
+                                    <img src="images/skin.jpg" alt="">
+                                    <img src="images/skin.jpg" alt="">
+                                    <img src="images/skin.jpg" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="" alt="">
+                                    <div>
+                                        <span>新皮肤：时之恋人-刘备</span>
+                                        <span>上线时间：2020.05.20</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="images/skin.jpg" alt="">
+                                    <img src="images/skin.jpg" alt="">
+                                    <img src="images/skin.jpg" alt="">
+                                    <img src="images/skin.jpg" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <div></div>
+                                <span>限免时间：2020-5-18至2020-5-24</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="main_item"></div>

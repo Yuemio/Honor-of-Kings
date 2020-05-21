@@ -88,6 +88,7 @@ function setNewsList(n) {
 }
 
 function itemSubNavMouseOver(n) {
+    itemContentInVisible();
     var nav = document.querySelector('.item_subnav');
     var nav_list = nav.querySelectorAll('a');
     for (var i = 0; i < nav_list.length; i++) {
@@ -111,18 +112,6 @@ function itemSubNavMouseOver(n) {
     if (n >= 2)
         return;
     itemThirdNavMouseOver(n + 1, 0)
-
-    // if (n < 2)
-    //     return;
-    // var nav = document.querySelector('#item_thirdnav' + ++n);
-    // var nav_list = nav.querySelectorAll('a');
-    // for (var i = 0; i < nav_list.length; i++) {
-    //     if (i == 0) {
-    //         nav_list[i].className = 'on'
-    //     } else {
-    //         nav_list[i].className = ''
-    //     }
-    // }
 }
 
 function itemThirdNavMouseOver(m, n) {
@@ -145,4 +134,34 @@ function itemThirdNavMouseOver(m, n) {
             ul_list[i].className = 'tganime-fadein'
         }
     }
+}
+
+function heroTypeMouseOver(m, n) {
+    var div = document.querySelector('.hero_list');
+    var ul_list = div.querySelectorAll('ul');
+    for (var i = 0; i < ul_list.length; i++) {
+        if (ul_list[i].id == 'hero_list' + n) {
+            ul_list[i].className = 'tganime-fadein on'
+        } else {
+            ul_list[i].className = 'tganime-fadein'
+        }
+    }
+
+    div = document.querySelector('.hero_type');
+    var li_list = div.querySelectorAll('li'); 
+    for (var i = 0; i < ul_list.length; i++) {
+        if (i == m) {
+            li_list[i].className = 'on'
+        } else {
+            li_list[i].className = ''
+        }
+    }
+}
+
+function itemContentVisible() {
+    document.querySelector('.dropdown').style.display = 'block';
+}
+
+function itemContentInVisible() {
+    document.querySelector('.dropdown').style.display = 'none';
 }
