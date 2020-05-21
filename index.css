@@ -13,6 +13,10 @@ li {
     list-style: none;
 }
 
+img {
+    display: block;
+}
+
 .fl {
     float: left;
 }
@@ -47,7 +51,6 @@ li {
     height: 40px;
     font-size: 14px;
     line-height: 40px;
-    /* cursor: pointer; */
 }
 
 .ost-logo {
@@ -318,10 +321,6 @@ li {
     transition: height .3s ease;
     overflow: hidden;
 }
-
-/* .sub-nav:hover {
-    height: 285px;
-} */
 
 .sub-nav-inner {
     width: 970px;
@@ -618,6 +617,10 @@ li {
     background-position: -252px 4px;
 }
 
+.item-header .more-btn:hover {
+    color: #f3c258;
+}
+
 .item_subnav {
     height: 32px;
     background-color: #f5f5f5;
@@ -751,7 +754,7 @@ li {
     /* overflow: hidden; */
 }
 
-.item_content li img {
+.item_content li a img {
     display: block;
     width: 209px;
     height: 125px;
@@ -795,8 +798,6 @@ li {
 .item_content .mask {
     position: absolute;
     top: 0;
-    width: 209px;
-    height: 125px;
     background: rgba(0, 0, 0, 0.6);
     opacity: 0;
     transition: opacity .1s ease;
@@ -885,6 +886,7 @@ li {
 .hero-skin {
     width: 295px;
     height: 528px;
+    overflow: hidden;
 }
 
 .hero-skin .item_subnav a {
@@ -895,6 +897,95 @@ li {
     background-position: 0 -144px;
 }
 
-.heroSkin_slide li {
-    
+.new-hero-skin {
+    width: 295px;
+    margin-bottom: 10px;
+}
+
+.new-hero-skin div {
+    width: 295px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border: 1px solid #e5e5e5;
+    border-top: none;
+    color: #323232;
+}
+
+.new-hero-skin img {
+    cursor: pointer;
+}
+
+.hero-skin-slide {
+    width: 885px;
+    height: 419px;
+    margin-top: 14px;
+    transition: margin-left .5s;
+}
+
+.hero-skin-slide span {
+    font-size: 12px;
+    color: #999;
+}
+
+.hero-skin-slide li {
+    float: left;
+    width: 295px;
+    margin: 0;
+    overflow: hidden;
+}
+
+.hero-skin-slide .free-date {
+    display: inline-block;
+    margin-left: 83px;
+    padding-left: 20px;
+    background: url(images/index.png) no-repeat;
+    background-position: -256px -41px;
+}
+
+.hero-skin-pic {
+    width: 295px;
+    overflow: hidden;
+}
+
+.hero-skin-pic>div {
+    float: left;
+    margin-right: 7px;
+    line-height: 0;
+    overflow: hidden;
+}
+
+.hero-skin-pic>div:nth-child(4n) {
+    margin-right: 0;
+}
+
+.hero-skin-pic img {
+    float: left;
+    width: 68px;
+    height: 173px;
+    margin-bottom: 12px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.hero-skin .on {
+    border-bottom: 3px solid #f3c258;
+    color: #333333;
+}
+
+.hero-skin-pic .mask {
+    width: 68px;
+    height: 173px;
+    padding-left: 34px;
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+    color: #f3c258;
+    text-align: center;
+    box-sizing: border-box;
+    writing-mode: vertical-lr;
+    cursor: pointer;
+    transition-duration: 0s;
+}
+
+.hero-skin-pic .mask:hover {
+    transition-duration: .5s;
 }

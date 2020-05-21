@@ -148,7 +148,7 @@ function heroTypeMouseOver(m, n) {
     }
 
     div = document.querySelector('.hero_type');
-    var li_list = div.querySelectorAll('li'); 
+    var li_list = div.querySelectorAll('li');
     for (var i = 0; i < ul_list.length; i++) {
         if (i == m) {
             li_list[i].className = 'on'
@@ -164,4 +164,19 @@ function itemContentVisible() {
 
 function itemContentInVisible() {
     document.querySelector('.dropdown').style.display = 'none';
+}
+
+function heroSkinNavMouseOver(n) {
+    var div = document.querySelector('.hero-skin-slide');
+    div.style.marginLeft = -295 * n + 'px'
+    var ul = document.querySelector('.hero-skin').querySelector('.item_subnav');
+    var list = ul.querySelectorAll('a');
+    for (var i = 0; list.length; i++) {
+        if (i == n) {
+            list[i].className = 'on';
+        } else {
+            list[i].className = '';
+        }
+    }
+
 }
