@@ -210,5 +210,12 @@ function matchSubNavMouseOver(n) {
             div_list[i].className = 'item_match tganime-fadein'
         }
     }
+}
 
+function wcBtnMouseover() {
+    document.querySelector('.gzh').className='gzh pa tganime-fadein on';
+}
+
+function wcBtnMouseout() {
+    document.querySelector('.gzh').className='gzh pa tganime-fadein';
 }
