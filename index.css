@@ -102,7 +102,7 @@ img {
 }
 
 .ost-box .ost-main .ost-logo2 {
-    bottom: 189px;
+    bottom: 185px;
 }
 
 @keyframes rankSlideDown {
@@ -1138,13 +1138,68 @@ img {
 }
 
 .footer {
-    background: url(images/bg_footer.jpg);
+    height: 362px;
+    margin-top: 50px;
+    background: url(images/bg_footer.jpg) no-repeat;
+    overflow: hidden;
+}
+
+.foot_logo {
+    padding: 15px 0;
+    border-bottom: 2px solid#d4d4d4;
+}
+
+.foot_logo img {
+    height: 64px;
+    background: url(images/spr.png) no-repeat;
 }
 
 .footer_content {
-    /* height: 520px; */
-    background-color: pink;
-    opacity: .5;
+    margin-top: 60px;
     font-size: 12px;
+    line-height: 20px;
     color: #6d6d6d;
+    overflow: hidden;
+}
+
+.footer_content a {
+    color: #6d6d6d;
+}
+
+.footer_content span {
+    white-space: nowrap;
+}
+
+.footer_content .tips,
+.footer_content p,
+.footer_content .link_map,
+.footer_content .copyright {
+    margin-top: 8px;
+}
+
+.foot_left {
+    width: 508px;
+    margin-right: 31px;
+    overflow: hidden;
+}
+
+.foot_left .tips span {
+    margin-right: 8px;
+}
+
+.foot_right .mark {
+    padding-left: 18px;
+    background: url(images/gswj.png) no-repeat;
+    background-position: 0 3px;
+}
+
+.foot_right .record {
+    padding-left: 18px;
+    background: url(images/icplogo.png) no-repeat;
+    background-position: 0 3px;
+}
+
+.foot_right .report {
+    display: block;
+    margin-top: 20px;
 }
