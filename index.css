@@ -1074,3 +1074,25 @@ img {
     font-size: 12px;
     color: #b8b9c5;
 }
+
+.KPL_match .item-title {
+    background-position: -157px -106px;
+}
+
+.KPL_match .buy-btn {
+    margin-right: 20px;
+    padding: 0 8px 0 31px;
+    border: 1px solid #f3c258;
+    border-radius: 3px;
+    background-position: -245px -84px;
+    box-sizing: border-box;
+    color: #333;
+}
+
+.KPL_match .item_subnav a {
+    width: 83px;
+}
+
+.KPL_match .clan_2nd {
+    float: right;
+}
