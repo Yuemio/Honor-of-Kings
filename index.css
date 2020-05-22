@@ -35,7 +35,7 @@ img {
 
 .w {
     margin: 0 auto;
-    width: 980px;
+    width: 1200px;
 }
 
 .ost-box {
@@ -376,6 +376,7 @@ img {
 .wrapper {
     min-width: 1280px;
     padding-top: 42px;
+    overflow: hidden;
 }
 
 .wrapper .kv-bg {
@@ -1134,4 +1135,16 @@ img {
     margin: 10px auto 4px auto;
     text-align: center;
     box-sizing: border-box;
+}
+
+.footer {
+    background: url(images/bg_footer.jpg);
+}
+
+.footer_content {
+    /* height: 520px; */
+    background-color: pink;
+    opacity: .5;
+    font-size: 12px;
+    color: #6d6d6d;
 }
