@@ -182,5 +182,33 @@ function heroSkinNavMouseOver(n) {
 }
 
 function matchSubNavMouseOver(n) {
+    var nav = document.querySelector('.match_center').querySelector('.item_subnav');
+    var nav_list = nav.querySelectorAll('a');
+    for (var i = 0; i < nav_list.length; i++) {
+        if (i == n) {
+            nav_list[i].className = 'on'
+        } else {
+            nav_list[i].className = ''
+        }
+    }
+
+    var div = document.querySelector('.match_center').querySelector('.item_content');
+    var ul_list = div.querySelectorAll('ul');
+    for (var i = 0; i < ul_list.length; i++) {
+        if (i == n) {
+            ul_list[i].className = 'tganime-fadein on'
+        } else {
+            ul_list[i].className = 'tganime-fadein'
+        }
+    }
+
+    div_list = document.querySelectorAll('.item_match');
+    for (var i = 0; i < ul_list.length; i++) {
+        if (i == n) {
+            div_list[i].className = 'item_match tganime-fadein on'
+        } else {
+            div_list[i].className = 'item_match tganime-fadein'
+        }
+    }
 
 }
