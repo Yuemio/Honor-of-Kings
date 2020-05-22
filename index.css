@@ -1097,26 +1097,41 @@ img {
     float: right;
 }
 
+.KPL_match .item_content {
+    margin-bottom: 22px;
+    overflow: hidden;
+}
+
 .KPL_match .item_content li {
     display: block;
     width: 295px;
     height: 69px;
     margin: 0;
     border-bottom: 1px solid #e5e5e5;
-    background-color: pink;
     font-size: 12px;
     line-height: 69px;
     text-align: center;
-    /* overflow: hidden; */
 }
 
-.KPL_match .clan_box div {
-    /* float: left; */
+.KPL_match .item_content li>* {
+    width: 83px;
+}
+
+.KPL_match .item_content .VS {
+    width: 46px;
+    font-size: 14px;
+    color: #f3c258;
+}
+
+.KPL_match .clan_box {
+    color: #333;
+    line-height: 16px;
 }
 
 .KPL_match .clan_box img {
     width: 25px;
     height: 25px;
-    margin: 0 auto;
+    margin: 10px auto 4px auto;
     text-align: center;
+    box-sizing: border-box;
 }
