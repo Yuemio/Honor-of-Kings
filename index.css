@@ -243,7 +243,6 @@ img {
     width: 1200px;
     height: 84px;
     margin: 0 auto;
-    /* background-color: pink; */
 }
 
 .header-nav .header-logo a {
@@ -421,14 +420,13 @@ img {
     width: 604px;
     height: 342px;
     overflow: hidden;
-    /* background-color: skyblue; */
     white-space: nowrap;
 }
 
 .rotate .promo-list {
     width: 3020px;
     height: 298px;
-    transition: margin-left .2s;
+    transition: margin-left .4s;
 }
 
 .rotate .promo-list img {
