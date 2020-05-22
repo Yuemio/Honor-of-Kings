@@ -1096,3 +1096,27 @@ img {
 .KPL_match .clan_2nd {
     float: right;
 }
+
+.KPL_match .item_content li {
+    display: block;
+    width: 295px;
+    height: 69px;
+    margin: 0;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: pink;
+    font-size: 12px;
+    line-height: 69px;
+    text-align: center;
+    /* overflow: hidden; */
+}
+
+.KPL_match .clan_box div {
+    /* float: left; */
+}
+
+.KPL_match .clan_box img {
+    width: 25px;
+    height: 25px;
+    margin: 0 auto;
+    text-align: center;
+}
