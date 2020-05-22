@@ -45,6 +45,10 @@ img {
     color: #333;
 }
 
+.ost-main {
+    width: 980px;
+}
+
 .ost-main div {
     float: left;
     height: 40px;
@@ -583,7 +587,6 @@ img {
 
 .content-center {
     width: 872px;
-    height: 528px;
     margin: 0 33px 20px 0;
 }
 
@@ -1281,4 +1284,3 @@ img {
     font-size: 12px;
     color: #cd974b;
 }
-
