@@ -385,7 +385,7 @@ img {
     top: 40px;
     left: 0;
     z-index: 1;
-    width: 100%;
+    min-width: 1280px;
     height: 1100px;
     background: url(images/bg2.jpg) no-repeat;
     background-position: top center;
@@ -1132,6 +1132,7 @@ img {
 
 .footer {
     height: 362px;
+    min-width: 1280px;
     margin-top: 50px;
     background: url(images/bg_footer.jpg) no-repeat;
     overflow: hidden;
