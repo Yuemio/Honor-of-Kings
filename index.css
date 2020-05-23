@@ -376,6 +376,7 @@ img {
 
 .wrapper {
     width: 100%;
+    min-width: 1280px;
     padding-top: 42px;
 }
 
