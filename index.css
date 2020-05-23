@@ -46,7 +46,7 @@ img {
 }
 
 .ost-main {
-    width: 980px;
+    /* width: 980px; */
 }
 
 .ost-main div {
@@ -375,17 +375,17 @@ img {
 }
 
 .wrapper {
-    min-width: 1280px;
+    width: 100%;
     padding-top: 42px;
-    overflow: hidden;
 }
 
 .wrapper .kv-bg {
     position: absolute;
+    min-width: 1280px;
     top: 40px;
     left: 0;
     z-index: 1;
-    min-width: 1280px;
+    width: 100%;
     height: 1100px;
     background: url(images/bg2.jpg) no-repeat;
     background-position: top center;
