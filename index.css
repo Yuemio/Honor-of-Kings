@@ -1206,6 +1206,7 @@ img {
     height: 494px;
     margin-top: -228px;
     background: url(images/r_navBg.png) no-repeat;
+    pointer-events: none;
 }
 
 .dj_pic {
@@ -1231,6 +1232,7 @@ img {
     box-sizing: border-box;
     background: url(images/r_all.png);
     background-position-y: -1.2px;
+    pointer-events: auto;
 }
 
 .dj_main .weibo_btn,
@@ -1240,6 +1242,7 @@ img {
     background-position: -122px -120px;
     margin-top: 1px;
     cursor: pointer;
+    pointer-events: auto;
 }
 
 .dj_main .wechar_btn {
@@ -1266,6 +1269,7 @@ img {
     background-color: rgba(0, 0, 0, 0.4);
     padding: 2px;
     box-sizing: border-box;
+    pointer-events: auto;
 }
 
 .gzh.on {
