@@ -213,9 +213,44 @@ function matchSubNavMouseOver(n) {
 }
 
 function wcBtnMouseover() {
-    document.querySelector('.gzh').className='gzh pa tganime-fadein on';
+    document.querySelector('.gzh').className = 'gzh pa tganime-fadein on';
 }
 
 function wcBtnMouseout() {
-    document.querySelector('.gzh').className='gzh pa tganime-fadein';
+    document.querySelector('.gzh').className = 'gzh pa tganime-fadein';
+}
+
+$('div.hero_type.fl li').bind("mouseenter", function () {
+    var tid = $(this).attr('data-id');
+    var n = $(this).index();
+    if (tid == 0) {
+        //????dz????20???
+        var encodeParam = 'E5CB3C064B7A772867B1B552594434FCA26621A002CCB5AF47407E70297E2D6EE7962AC5C4D05234943B0144EDFBDCC4C2A285820C8983E5DE4E22B38EF167CCCA62220D5B3FF8BF83283431B8FF17FB790EDAA0932201873DEC7556F3CFF3AD325B51D6FF5A451618921BA48FF6818B53191FA3C7ED56E51021350FDC66A01CB44BB53178F3C501';
+        $.ajax({
+            url: 'https://pvp.ingame.qq.com/php/ingame/smoba/top_heros.php?partition=1119&roleid=90876401&area=1&physicalID=1&algorithm=v2&version=2.14.6a&timestamp=1493112232746&appid=1104466820&sig=11a92c24e8f0d1fc74e31bb8c5203a09&encode=2&msdkEncodeParam=' + encodeParam + '&game=smoba&start=1&num=20&ordertype=1&filter=0&grade=-1&herotype=0&matchtype=2',
+            dataType: 'jsonp',
+            'success': function (data) {
+                console.log('hello');
+                console.log(data);
+                
+                // var RetHTML = '';
+                // if (data.status == 'SUCCESS') {
+                //     var hdata = data.data.herolist;
+                //     for (var x in hdata) {
+                //         var hid = hdata[x].heroid;
+                //         if (module_exports[hid] != "") {
+                //             herolist[x] = module_exports[hid];
+                //             herolistIds[x] = hid;
+                //         }
+                //     }
+                // }
+            }
+        })
+    }
+});
+
+function showData(result) {
+    var data = JSON.stringify(result);
+    console.log(data);
+
 }
